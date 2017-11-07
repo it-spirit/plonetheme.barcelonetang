@@ -1,15 +1,17 @@
 [*]
+charset = utf-8
 indent_style = space
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-charset = utf-8
 
-[{*.py,*.cfg}]
-indent_size = 4
-
-[{*.html,*.dtml,*.pt,*.zpt,*.xml,*.zcml,*.js}]
+# 2 space indentation
+[*.{css,html,js,less,pt,sass,scss,xml,zcml}]
 indent_size = 2
+
+# 4 space indentation
+[*.{cfg,py}]
+indent_size = 4
 
 [Makefile]
 indent_style = tab
