@@ -1,6 +1,6 @@
 [report]
 include =
-    src/plonetheme/*
+    src/*
 omit =
     */test*
     */upgrades/*

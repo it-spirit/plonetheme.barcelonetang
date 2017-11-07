@@ -14,7 +14,7 @@
   <plone:static
       directory="theme"
       type="theme"
-      name="barceloneta-ng"
+      name="barcelonetang"
       />
 
   <genericsetup:registerProfile
