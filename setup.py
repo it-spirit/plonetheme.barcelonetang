@@ -21,7 +21,6 @@ install_requires = [
     'collective.themesitesetup',
     'plone.api',
     'plone.app.theming',
-    'plonetheme.barceloneta',
     'spirit.plone.theming',
 ],
 
