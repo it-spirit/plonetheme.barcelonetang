@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
 from plone import api
-from plonetheme.barcelonetang.testing import PLONETHEME_BARCELONETANG_INTEGRATION_TESTING  # noqa
+from plonetheme.barcelonetang import testing
 
 import unittest
 
 
 class TestSetup(unittest.TestCase):
-    """Test that plonetheme.barcelonetang is properly installed."""
+    """Validate that plonetheme.barcelonetang is properly installed."""
 
-    layer = PLONETHEME_BARCELONETANG_INTEGRATION_TESTING
+    layer = testing.PLONETHEME_BARCELONETANG_INTEGRATION_TESTING
 
     def setUp(self):
         """Custom shared utility setup for tests."""
@@ -30,8 +30,9 @@ class TestSetup(unittest.TestCase):
 
 
 class TestUninstall(unittest.TestCase):
+    """Validate that plonetheme.barcelonetang can be uninstalled."""
 
-    layer = PLONETHEME_BARCELONETANG_INTEGRATION_TESTING
+    layer = testing.PLONETHEME_BARCELONETANG_INTEGRATION_TESTING
 
     def setUp(self):
         self.portal = self.layer['portal']
@@ -48,4 +49,7 @@ class TestUninstall(unittest.TestCase):
         from plonetheme.barcelonetang.interfaces import \
             IPlonethemeBarcelonetangLayer
         from plone.browserlayer import utils
-        self.assertNotIn(IPlonethemeBarcelonetangLayer, utils.registered_layers())
+        self.assertNotIn(
+            IPlonethemeBarcelonetangLayer,
+            utils.registered_layers(),
+        )

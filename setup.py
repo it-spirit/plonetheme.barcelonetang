@@ -12,9 +12,19 @@ long_description = '\n\n'.join([
 ])
 
 
+install_requires = [
+    'Products.GenericSetup>=1.8.2',
+    'plone.api',
+    'plone.app.theming',
+    'plonetheme.barceloneta',
+    'setuptools',
+    'z3c.jbot',
+],
+
+
 setup(
     name='plonetheme.barcelonetang',
-    version='1.0a1',
+    version='1.0.dev0',
     description="The NG default theme for Plone 5",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -30,30 +40,21 @@ setup(
     keywords='Python Plone',
     author='Thomas Massmann',
     author_email='thomas.massmann@it-spir.it',
-    url='https://pypi.python.org/pypi/plonetheme.barcelonetang',
+    url='https://github.com/it-spirit/plonetheme.barcelonetang',
+    download_url='https://pypi.python.org/pypi/plonetheme.barcelonetang',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
-    install_requires=[
-        'plone.api',
-        'Products.GenericSetup>=1.8.2',
-        'setuptools',
-        'z3c.jbot',
-        'plone.app.theming',
-        'plone.app.themingplugins',
-    ],
+    install_requires=install_requires,
     extras_require={
         'test': [
-            'plone.app.testing',
-            # Plone KGS does not use this version, because it would break
-            # Remove if your package shall be part of coredev.
-            # plone_coredev tests as of 2016-04-01.
-            'plone.testing>=5.0.0',
             'plone.app.contenttypes',
             'plone.app.robotframework[debug]',
+            'plone.app.testing',
+            'robotframework-selenium2screenshots',
         ],
     },
     entry_points="""

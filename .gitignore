@@ -13,6 +13,7 @@ htmlcov/
 include/
 lib/
 local/
+node_modules/
 parts/
 src/*
 test.plone_addon/
@@ -23,6 +24,7 @@ var/
 lib64
 log.html
 output.xml
+package-lock.json
 pip-selfcheck.json
 report.html
 # excludes
