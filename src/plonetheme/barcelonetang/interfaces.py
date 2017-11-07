@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Module where all interfaces, events and exceptions live."""
+"""Common interface definitions for plonetheme.barceloneta."""
 
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 

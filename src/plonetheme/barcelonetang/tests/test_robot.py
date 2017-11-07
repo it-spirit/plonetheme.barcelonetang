@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-from plone.app.testing import ROBOT_TEST_LEVEL
+"""Test UI with robot framework."""
+
+from plone import api
 from plone.testing import layered
-from plonetheme.barcelonetang.testing import PLONETHEME_BARCELONETANG_ACCEPTANCE_TESTING  # noqa
+from plonetheme.barcelonetang import testing
 
 import os
 import robotsuite
@@ -9,20 +11,25 @@ import unittest
 
 
 def test_suite():
+    """Create the robot test suite."""
     suite = unittest.TestSuite()
+    no_robot = 'NO_ROBOT' in os.environ.keys()
+    if no_robot or api.env.plone_version() < '4.2':
+        # No robot tests for Plone 4.1.x
+        return suite
+
     current_dir = os.path.abspath(os.path.dirname(__file__))
     robot_dir = os.path.join(current_dir, 'robot')
     robot_tests = [
-        os.path.join('robot', doc) for doc in os.listdir(robot_dir)
-        if doc.endswith('.robot') and doc.startswith('test_')
+        os.path.join('robot', doc)
+        for doc in os.listdir(robot_dir)
+        if doc.startswith('test') and doc.endswith('.robot')
     ]
-    for robot_test in robot_tests:
-        robottestsuite = robotsuite.RobotTestSuite(robot_test)
-        robottestsuite.level = ROBOT_TEST_LEVEL
+    for test in robot_tests:
         suite.addTests([
             layered(
-                robottestsuite,
-                layer=PLONETHEME_BARCELONETANG_ACCEPTANCE_TESTING
+                robotsuite.RobotTestSuite(test),
+                layer=testing.ROBOT_TESTING,
             ),
         ])
     return suite

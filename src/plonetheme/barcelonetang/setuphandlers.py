@@ -1,14 +1,18 @@
 # -*- coding: utf-8 -*-
+"""Post install import steps for ps.diazo.quito."""
+
 from Products.CMFPlone.interfaces import INonInstallable
 from zope.interface import implementer
 
 
 @implementer(INonInstallable)
 class HiddenProfiles(object):
+    """Hidden GS profiles."""
 
     def getNonInstallableProfiles(self):
-        """Hide uninstall profile from site-creation and quickinstaller"""
+        """Do not show on Plone's list of installable profiles."""
         return [
+            'plonetheme.barcelonetang:testfixture',
             'plonetheme.barcelonetang:uninstall',
         ]
 

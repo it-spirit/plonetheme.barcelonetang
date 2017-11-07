@@ -1,42 +1,33 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:plone="http://namespaces.plone.org/plone"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plonetheme.barcelonetang">
 
+  <!-- Register i18n support. -->
+  <!-- ====================== -->
   <i18n:registerTranslations directory="locales" />
 
+
+  <!-- Include package dependencies. -->
+  <!-- ============================= -->
   <includeDependencies package="." />
+  <include file="profiles.zcml" />
 
-  <include package=".browser" />
 
+  <!-- Register the diazo themes. -->
+  <!-- ========================== -->
   <plone:static
       directory="theme"
-      type="theme"
       name="barcelonetang"
+      type="theme"
       />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="Plone Theme: Barceloneta NG"
-      directory="profiles/default"
-      description="Installs the Plone theme package plonetheme.barcelonetang."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
+  <plone:static
+      directory="theme-custom"
+      name="barcelonetang-custom"
+      type="theme"
       />
-
-  <genericsetup:registerProfile
-      name="uninstall"
-      title="Uninstall: Plone Theme: Barceloneta NG"
-      directory="profiles/uninstall"
-      description="Uninstalls the Plone theme package plonetheme.barcelonetang."
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.uninstall"
-      />
-
-  <utility
-      factory=".setuphandlers.HiddenProfiles"
-      name="plonetheme.barcelonetang-hiddenprofiles" />
 
 </configure>
