@@ -5,6 +5,7 @@
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-postcss": "^0.8.0",

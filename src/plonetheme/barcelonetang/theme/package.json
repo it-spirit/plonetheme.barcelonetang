@@ -3,6 +3,7 @@
   "name": "plonetheme.barcelonetang",
   "version": "1.0.0",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "plonetheme.barceloneta": "git+https://git@github.com/plone/plonetheme.barceloneta.git#1.7.4"
   }
 }

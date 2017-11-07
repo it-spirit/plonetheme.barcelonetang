@@ -7,6 +7,38 @@ module.exports = function (grunt) {
     // also, in this way we do not have to worry
     // about putting files in the correct order
     // (the dependency tree is walked by r.js)
+    copy: {
+      barceloneta_src: {
+        files: [
+          // includes files within path and its sub-directories
+          {
+            expand: true,
+            cwd: 'node_modules/plonetheme.barceloneta/plonetheme/barceloneta/theme/less/',
+            src: ['*.less'],
+            dest: '_less/barceloneta/',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/plonetheme.barceloneta/plonetheme/barceloneta/theme/less/roboto',
+            src: ['**'],
+            dest: 'assets/css/roboto',
+            filter: 'isFile'
+          },
+          {
+            expand: true,
+            cwd: 'node_modules/plonetheme.barceloneta/plonetheme/barceloneta/theme/',
+            src: [
+              '*.ico',
+              '*.png'
+            ],
+            dest: 'assets/img',
+            filter: 'isFile'
+          },
+        ],
+      },
+    },
+
     less: {
       dev: {
         options: {
@@ -17,7 +49,8 @@ module.exports = function (grunt) {
           sourceMapFileInline: true
         },
         files: {
-          'less/theme.css': 'less/theme.less',
+          'assets/css/barceloneta.css': '_less/barceloneta.less',
+          'assets/css/theme.css': '_less/theme.less',
         }
       },
       dist: {
@@ -28,7 +61,8 @@ module.exports = function (grunt) {
           sourceMap: false,
         },
         files: {
-          'less/theme.css': 'less/theme.less',
+          'assets/css/barceloneta.css': '_less/barceloneta.less',
+          'assets/css/theme.css': '_less/theme.less',
         }
       }
     },
@@ -45,18 +79,18 @@ module.exports = function (grunt) {
         options: {
           map: true,
         },
-        src: 'less/*.css'
+        src: 'assets/css/*.css'
       },
       dist: {
         map: false,
-        src: 'less/*.css'
+        src: 'assets/css/*.css'
       }
     },
     watch: {
       less: {
         files: [
-          'less/*.less',
-          'less/**/*.less'
+          '_less/*.less',
+          '_less/**/*.less'
         ],
         tasks: ['less:dev', 'postcss:dev']
       }
@@ -65,7 +99,7 @@ module.exports = function (grunt) {
       html: {
         bsFiles: {
           src : [
-            'less/*.css',
+            'assets/css/*.css',
             '*.html'
           ]
         },
@@ -81,7 +115,7 @@ module.exports = function (grunt) {
       plone: {
         bsFiles: {
           src : [
-            'less/*.css',
+            'assets/css/*.css',
             'rules/*.xml',
             '*.html',
             '*.xml'
@@ -102,6 +136,7 @@ module.exports = function (grunt) {
 
   // grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
@@ -109,6 +144,7 @@ module.exports = function (grunt) {
   // CWD to theme folder
   grunt.file.setBase('./src/plonetheme/barcelonetang/theme');
 
+  grunt.registerTask('update', ['copy:barceloneta_src', 'release']);
   grunt.registerTask('release', ['less:dist', 'postcss:dist']);
   grunt.registerTask('compile', ['less:dev', 'postcss:dev']);
   grunt.registerTask('default', ['release']);
