@@ -15,4 +15,16 @@
 
   </rules>
 
+  <!-- Add required CSS classes to body tag based on spirit.plone.theming settings. -->
+  <before theme-children="html/body">
+    <xsl:attribute name="class"><xsl:value-of select="/html/body/@class" />
+      <!-- Add selected layout classes from spirit.plone.theming to body tag. -->
+      <xsl:choose>
+        <xsl:when test="$layout='boxed'">
+          <xsl:value-of select="' boxed'" />
+        </xsl:when>
+      </xsl:choose>
+    </xsl:attribute>
+  </before>
+
 </rules>

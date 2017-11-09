@@ -1,5 +1,32 @@
 /* theme.less file that will be compiled */
 
+.boxed {
+  #main-wrapper  {
+    border: 1px solid #eee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+    max-width: 100%;
+
+    @media (min-width: 992px) {
+      width: 970px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+  }
+  &.plone-toolbar-left-default #main-wrapper {
+    @media (min-width: 1052px) {
+      width: 970px;
+    }
+
+    @media (min-width: 1260px) {
+      width: 1170px;
+    }
+  }
+}
+
 #portal-footer-wrapper {
   padding: 0;
   text-align: inherit;
