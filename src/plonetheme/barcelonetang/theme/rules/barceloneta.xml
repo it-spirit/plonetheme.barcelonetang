@@ -42,6 +42,7 @@
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
 
   <!-- Central column -->
+  <!--
   <replace css:theme="#content-container" method="raw">
 
     <xsl:variable name="central">
@@ -64,11 +65,13 @@
       </footer>
     </div>
   </replace>
+  -->
 
   <!-- Alert message -->
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 
   <!-- Left column -->
+  <!--
   <rules css:if-content="#portal-column-one">
     <replace css:theme="#column1-container">
       <div class="col-xs-6 col-sm-3 sidebar-offcanvas">
@@ -78,8 +81,10 @@
       </div>
     </replace>
   </rules>
+  -->
 
   <!-- Right column -->
+  <!--
   <rules css:if-content="#portal-column-two">
     <replace css:theme="#column2-container">
       <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="complementary">
@@ -89,6 +94,7 @@
       </div>
     </replace>
   </rules>
+  -->
 
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />

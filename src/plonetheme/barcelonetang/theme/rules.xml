@@ -23,6 +23,7 @@
   <!-- Include custom rules. -->
   <xi:include href="rules/core.xml" />
   <xi:include href="rules/header.xml" />
+  <xi:include href="rules/content.xml" />
   <xi:include href="rules/footer.xml" />
 
   <!-- Import TTW customizations -->
