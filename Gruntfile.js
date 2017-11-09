@@ -35,6 +35,18 @@ module.exports = function (grunt) {
             dest: 'assets/img',
             filter: 'isFile'
           },
+          {
+            expand: true,
+            cwd: 'node_modules/plonetheme.barceloneta/plonetheme/barceloneta/theme/',
+            src: [
+              'rules.xml'
+            ],
+            dest: 'rules/',
+            filter: 'isFile',
+            rename: function(dest, src) {
+              return dest + src.replace('rules.xml','barceloneta.xml');
+            }
+          },
         ],
       },
     },

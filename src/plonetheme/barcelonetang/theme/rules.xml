@@ -11,9 +11,7 @@
   <xsl:param name="theme_version"></xsl:param>
 
   <!-- Import Barceloneta rules -->
-  <xi:include href="++theme++barceloneta/rules.xml">
-    <xi:fallback />
-  </xi:include>
+  <xi:include href="rules/barceloneta.xml" />
 
   <!-- Include custom rules. -->
   <xi:include href="rules/core.xml" />
