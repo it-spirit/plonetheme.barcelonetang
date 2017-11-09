@@ -10,6 +10,7 @@
     <!-- Add Barceloneta CSS. -->
     <after css:theme-children="html head">
       <link rel="stylesheet" href="{$portal_url}/++theme++barcelonetang/assets/css/barceloneta.css?v={$theme_version}" type="text/css" />
+      <link rel="stylesheet" href="{$portal_url}/++theme++barcelonetang/assets/css/theme.css?v={$theme_version}" type="text/css" />
     </after>
 
   </rules>

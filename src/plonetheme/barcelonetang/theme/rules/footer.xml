@@ -4,4 +4,45 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
+  <rules css:if-not-content="#PLONE_THEMING_HIDE_FOOTER">
+    <!-- Replace footer information with Plone version. -->
+    <replace
+        css:if-not-content="#PLONE_THEMING_FOOTER_TEXT"
+        css:theme-children="#portal-footer .copyright > div"
+        css:content-children="#portal-footer-wrapper #portal-footer-signature .portletContent"
+        />
+
+    <replace
+        css:if-content="#PLONE_THEMING_FOOTER_TEXT"
+        css:theme-children="#portal-footer .copyright > div"
+        css:content-children="#PLONE_THEMING_FOOTER_TEXT"
+        />
+  </rules>
+  <drop css:theme="#portal-footer .copyright" css:if-content="#PLONE_THEMING_HIDE_FOOTER" />
+
+
+  <rules css:if-not-content="#PLONE_THEMING_HIDE_COLOPHON">
+      <!-- Replace colophon information with Plone version. -->
+    <replace
+        css:if-not-content="#PLONE_THEMING_COLOPHON_TEXT"
+        css:theme-children="#portal-footer .colophon > div"
+        css:content-children="#portal-footer-wrapper #portal-colophon .portletContent"
+        />
+
+    <replace
+        css:if-content="#PLONE_THEMING_COLOPHON_TEXT"
+        css:theme-children="#portal-footer .colophon > div"
+        css:content-children="#PLONE_THEMING_COLOPHON_TEXT"
+        />
+  </rules>
+  <drop css:theme="#portal-footer .colophon" css:if-content="#PLONE_THEMING_HIDE_COLOPHON" />
+
+
+  <!-- Replace site-actions with Plone version. -->
+  <replace
+      css:theme-children="#portal-footer .site-actions > div"
+      css:content="#portal-footer-wrapper .actions-site_actions"
+      />
+  <drop css:theme="#portal-footer .site-actions" css:if-not-content="#portal-footer-wrapper .actions-site_actions" />
+
 </rules>

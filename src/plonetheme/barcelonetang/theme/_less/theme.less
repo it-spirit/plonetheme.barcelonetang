@@ -1,1 +1,44 @@
 /* theme.less file that will be compiled */
+
+#portal-footer {
+  font-weight: 400;
+
+  p {
+    border: none;
+    margin-bottom: 14px;
+    padding-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > .row {
+    margin-top: 14px;
+    padding-top: 14px;
+
+    &:first-child {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+
+  .row + .site-actions {
+    border-top: 1px solid #4d4d4d;
+  }
+
+  .site-actions {
+    ul {
+      list-style: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        padding: 10px 30px;
+      }
+    }
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
