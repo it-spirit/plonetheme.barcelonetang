@@ -45,4 +45,56 @@
       />
   <drop css:theme="#portal-footer .site-actions" css:if-not-content="#portal-footer-wrapper .actions-site_actions" />
 
+
+  <!-- Move all other footer portlets into footer area. -->
+  <replace css:theme-children="#portal-footer .doormat">
+    <xsl:variable name="portlets" select="//footer[@id='portal-footer-wrapper']//div[@class='portletWrapper']/*[not(contains(@id,'portal-colophon')) and not(contains(@id,'portal-footer-signature')) and not(contains(@class,'portletActions'))]"></xsl:variable>
+    <xsl:variable name="portlets_count" select="count($portlets)"></xsl:variable>
+    <xsl:variable name="columns">
+      <xsl:if test="$portlets_count=1">col-md-12</xsl:if>
+      <xsl:if test="$portlets_count=2">col-md-6</xsl:if>
+      <xsl:if test="$portlets_count=3">col-md-4</xsl:if>
+      <xsl:if test="$portlets_count=4">col-md-3</xsl:if>
+      <xsl:if test="$portlets_count>4">col-md-4</xsl:if>
+    </xsl:variable>
+    <div class="row">
+      <xsl:for-each select="$portlets">
+        <div class="col-xs-12 {$columns}">
+          <xsl:for-each select=".">
+            <xsl:choose>
+              <xsl:when css:test=".portlet">
+                <xsl:choose>
+                  <xsl:when css:test=".portletHeader:not(.titleless)">
+                    <div class="headline"><h2><xsl:value-of css:select=".portletHeader" /></h2></div>
+                  </xsl:when>
+                </xsl:choose>
+                <xsl:choose>
+                  <xsl:when css:test=".portletCollection">
+                    <ul>
+                      <xsl:for-each css:select=".portletItem">
+                        <li>
+                          <a><xsl:copy-of select="a/attribute::*" /><xsl:apply-templates select="./a/text()" /></a>
+                          <small><xsl:value-of css:select=".portletItemDetails" /></small>
+                        </li>
+                      </xsl:for-each>
+                    </ul>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:apply-templates css:select=".portletContent" />
+                  </xsl:otherwise>
+                </xsl:choose>
+                <xsl:if css:test=".portletFooter">
+                  <p><xsl:apply-templates select="./node()[@class='portletFooter']/node()" /></p>
+                </xsl:if>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:apply-templates select="./node()" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </xsl:for-each>
+        </div>
+      </xsl:for-each>
+    </div>
+  </replace>
+
 </rules>
