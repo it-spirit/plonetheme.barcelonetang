@@ -4,6 +4,18 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xi="http://www.w3.org/2001/XInclude">
 
+  <!-- Show spirit.plone.theming debug output, if enabled. -->
+  <before css:theme="#main-wrapper" css:if-content="#PLONE_THEMING_DEBUG">
+    <div class="container">
+      <div class="row">
+        <pre class="col-xs-12">
+          <xsl:copy-of css:select="#spirit_plone_theming_diazo_snippets" />
+        </pre>
+      </div>
+    </div>
+  </before>
+  <drop css:content="#spirit_plone_theming_diazo_snippets" />
+
   <!-- Hide search box, if requested. -->
   <drop css:content="#portal-searchbox" css:if-content="#PLONE_THEMING_HIDE_SEARCHBOX" />
 
