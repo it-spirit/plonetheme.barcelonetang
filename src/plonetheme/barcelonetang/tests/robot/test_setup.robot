@@ -8,7 +8,10 @@ Suite Teardown  Teardown
 
 *** Test cases ***
 
-Show how to activate the add-on
+Capture Setup Screenshots
+
+    # Show how to activate the add-on
+
     Enable autologin as  Manager
     Go to  ${PLONE_URL}/prefs_install_products_form
 
@@ -42,7 +45,8 @@ Show how to activate the add-on
     ...  id=addons-enabled
 
 
-Show how to upload as zip file
+    # Show how to upload as zip file
+
     Enable autologin as  Manager
     Go to  ${PLONE_URL}/@@theming-controlpanel
 

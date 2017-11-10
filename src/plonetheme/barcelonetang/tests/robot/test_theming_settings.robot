@@ -8,14 +8,14 @@ Suite Teardown  Teardown
 
 *** Test cases ***
 
-Capture Plone Theming Settings Screenshot
+Capture Plone Theming Settings Screenshots
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
     Capture page screenshot  spirit_plone_theming_overview.png
 
 
-Show how to enable the debug mode
+    # Show how to enable the debug mode
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -35,7 +35,7 @@ Show how to enable the debug mode
     Click button  css=#form-buttons-save
 
 
-Show how to change the header options
+    # Show how to change the header options
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -60,7 +60,7 @@ Show how to change the header options
     ...  css=#above-content-wrapper
 
 
-Show how to change the footer options
+    # Show how to change the footer options
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -83,7 +83,7 @@ Show how to change the footer options
     ...  css=#portal-footer-wrapper
 
 
-Show how to change the color options
+    # Show how to change the color options
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -126,7 +126,7 @@ Show how to change the color options
     ...  css=#main-wrapper
 
 
-Show how to change the pattern options
+    # Show how to change the pattern options
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -149,7 +149,7 @@ Show how to change the pattern options
     ...  css=#main-wrapper
 
 
-Show how to change the layout options
+    # Show how to change the layout options
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -182,7 +182,7 @@ Show how to change the layout options
     ...  css=body
 
 
-Show how to change the slogan
+    # Show how to change the slogan
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -207,7 +207,7 @@ Show how to change the slogan
     ...  css=#above-content-wrapper
 
 
-Show how to change the phone number
+    # Show how to change the phone number
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -232,7 +232,7 @@ Show how to change the phone number
     ...  css=#above-content-wrapper
 
 
-Show how to change the e-mail address
+    # Show how to change the e-mail address
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -257,7 +257,7 @@ Show how to change the e-mail address
     ...  css=#above-content-wrapper
 
 
-Show how to hide the search box
+    # Show how to hide the search box
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -276,7 +276,7 @@ Show how to hide the search box
     Click button  css=#form-buttons-save
 
 
-Show how to change the footer text
+    # Show how to change the footer text
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -302,7 +302,7 @@ Show how to change the footer text
     ...  css=#portal-footer-wrapper
 
 
-Show how to hide the footer
+    # Show how to hide the footer
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -320,7 +320,7 @@ Show how to hide the footer
     Click button  css=#form-buttons-save
 
 
-Show how to change the colophon text
+    # Show how to change the colophon text
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -345,7 +345,7 @@ Show how to change the colophon text
     ...  css=#portal-footer-wrapper
 
 
-Show how to hide the colophon
+    # Show how to hide the colophon
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
