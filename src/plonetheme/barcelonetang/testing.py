@@ -24,6 +24,7 @@ class PlonethemeBarcelonetangLayer(PloneSandboxLayer):
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'plonetheme.barcelonetang:default')
+        applyProfile(portal, 'plone.app.contenttypes:plone-content')
 
 
 PLONETHEME_BARCELONETANG_FIXTURE = PlonethemeBarcelonetangLayer()
