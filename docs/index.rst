@@ -1,5 +1,0 @@
-====================
-plonetheme.barcelonetang
-====================
-
-User documentation
