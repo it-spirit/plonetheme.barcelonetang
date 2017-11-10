@@ -192,7 +192,8 @@ Show how to change the slogan
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-slogan--activated.png
-    ...  css=body
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -202,7 +203,8 @@ Show how to change the slogan
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-slogan--deactivated.png
-    ...  css=body
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
 
 
 Show how to change the phone number
@@ -215,7 +217,8 @@ Show how to change the phone number
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-phone_number--activated.png
-    ...  css=body
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -225,7 +228,8 @@ Show how to change the phone number
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-phone_number--deactivated.png
-    ...  css=body
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
 
 
 Show how to change the e-mail address
@@ -238,7 +242,8 @@ Show how to change the e-mail address
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-email--activated.png
-    ...  css=body
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
@@ -248,7 +253,8 @@ Show how to change the e-mail address
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-email--deactivated.png
-    ...  css=body
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
 
 
 Show how to hide the search box
