@@ -203,3 +203,155 @@ Show how to change the slogan
     Capture and crop page screenshot
     ...  settings-slogan--deactivated.png
     ...  css=body
+
+
+Show how to change the phone number
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Input text  id=form-widgets-phone_number  +1-234-567-890
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-phone_number--activated.png
+    ...  css=body
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Clear Element Text  id=form-widgets-phone_number
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-phone_number--deactivated.png
+    ...  css=body
+
+
+Show how to change the e-mail address
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Input text  id=form-widgets-email  info@example.com
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-email--activated.png
+    ...  css=body
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Clear Element Text  id=form-widgets-email
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-email--deactivated.png
+    ...  css=body
+
+
+Show how to hide the search box
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select Checkbox  css=#form-widgets-hide_searchbox-0
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-hide_searchbox--activated.png
+    ...  css=#content-header
+    ...  css=#above-content-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Unselect Checkbox  css=#form-widgets-hide_searchbox-0
+    Click button  css=#form-buttons-save
+
+
+Show how to change the footer text
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Input text  id=form-widgets-footer_text  <p>&copy; Copyright 2009-{year} Your Company Name</p>
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+
+    Highlight  css=#portal-footer-wrapper .copyright
+    Capture and crop page screenshot
+    ...  settings-footer_text--activated.png
+    ...  css=#portal-footer-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Clear Element Text  id=form-widgets-footer_text
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Highlight  css=#portal-footer-wrapper .copyright
+    Capture and crop page screenshot
+    ...  settings-footer_text--deactivated.png
+    ...  css=#portal-footer-wrapper
+
+
+Show how to hide the footer
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select Checkbox  css=#form-widgets-hide_footer-0
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-hide_footer--activated.png
+    ...  css=#portal-footer-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Unselect Checkbox  css=#form-widgets-hide_footer-0
+    Click button  css=#form-buttons-save
+
+
+Show how to change the colophon text
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Input text  id=form-widgets-colophon_text  <p>Powered by Plone, Python & <a href="{portal_url}">Your Company Name</a></p>
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Highlight  css=#portal-footer-wrapper .colophon
+    Capture and crop page screenshot
+    ...  settings-colophon_text--activated.png
+    ...  css=#portal-footer-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Clear Element Text  id=form-widgets-colophon_text
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Highlight  css=#portal-footer-wrapper .colophon
+    Capture and crop page screenshot
+    ...  settings-colophon_text--deactivated.png
+    ...  css=#portal-footer-wrapper
+
+
+Show how to hide the colophon
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select Checkbox  css=#form-widgets-hide_colophon-0
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-hide_colophon--activated.png
+    ...  css=#portal-footer-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Unselect Checkbox  css=#form-widgets-hide_colophon-0
+    Click button  css=#form-buttons-save

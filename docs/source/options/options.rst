@@ -108,7 +108,7 @@ Slogan
 ======
 
 Add a slogan for your website (HTML is supported).
-The slogan will be shown in the header section, below the logo.
+The slogan will be shown in the header section.
 
 .. figure:: ../../_images/settings-slogan--activated.png
 
@@ -119,3 +119,120 @@ If no slogan has been added, nothing will be shown.
 .. figure:: ../../_images/settings-slogan--deactivated.png
 
    No slogan in the header
+
+
+Phone Number
+============
+
+Add a phone number for your primary website contact.
+The phone number will be shown in the header section.
+
+.. figure:: ../../_images/settings-phone_number--activated.png
+
+   Phone number in the header
+
+If no phone number has been added, nothing will be shown.
+
+.. figure:: ../../_images/settings-phone_number--deactivated.png
+
+   No phone number in the header
+
+
+E-Mail Address
+==============
+
+Add a valid email address.
+The e-mail address will be shown in the header section.
+
+.. figure:: ../../_images/settings-email--activated.png
+
+   E-Mail address in the header
+
+If no e-mail address has been added, nothing will be shown.
+
+.. figure:: ../../_images/settings-email--deactivated.png
+
+   No a-mail address in the header
+
+
+Hide Search Box
+===============
+
+If enabled, the search box (available in the header part) will be removed in the theme.
+
+.. figure:: ../../_images/settings-hide_searchbox--activated.png
+
+   Hide search box activated
+
+
+Slideshow Fullscreen Mode
+=========================
+
+This option is currently not supported.
+
+
+Custom Footer Text
+==================
+
+Add your custom footer text (HTML is supported).
+This will replace the footer content coming from Plone.
+
+Example:
+
+.. code-block:: html
+
+   <p>&copy; Copyright 2009-{year} Your Company Name</p>
+
+
+.. figure:: ../../_images/settings-footer_text--activated.png
+
+   Custom footer text activated
+
+If no text has been added, the default footer text from Plone will be shown.
+
+.. figure:: ../../_images/settings-footer_text--deactivated.png
+
+   Custom footer text deactivated
+
+
+Hide Footer Text
+================
+
+If enabled, the footer text (available in the footer part) will be removed in the theme.
+
+.. figure:: ../../_images/settings-hide_footer--activated.png
+
+   Hide footer text activated
+
+
+Custom Colophon Text
+====================
+
+Add your custom colophon text (HTML is supported).
+This will replace the colophon content coming from Plone.
+
+Example:
+
+.. code-block:: html
+
+   <p>Powered by Plone, Python &amp; <a href="{portal_url}">Your Company Name</a></p>
+
+.. figure:: ../../_images/settings-colophon_text--activated.png
+
+   Custom colophon text activated
+
+If no text has been added, the default colophon text from Plone will be shown.
+
+.. figure:: ../../_images/settings-colophon_text--deactivated.png
+
+   Custom colophon text deactivated
+
+
+Hide Colophon Text
+==================
+
+If enabled, the colophon text (available in the footer part) will be removed in the theme.
+
+.. figure:: ../../_images/settings-hide_colophon--activated.png
+
+   Hide colophon text activated
