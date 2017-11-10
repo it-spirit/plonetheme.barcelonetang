@@ -17,7 +17,7 @@
   <xsl:variable name="layout" css:select="#PLONE_THEMING_LAYOUT_OPTION"></xsl:variable>
   <xsl:variable name="pattern" css:select="#PLONE_THEMING_PATTERN_OPTION"></xsl:variable>
 
-  <!-- Import Barceloneta rules -->
+  <!-- Include Barceloneta rules. -->
   <xi:include href="rules/barceloneta.xml" />
 
   <!-- Include custom rules. -->
@@ -26,7 +26,7 @@
   <xi:include href="rules/content.xml" />
   <xi:include href="rules/footer.xml" />
 
-  <!-- Import TTW customizations -->
+  <!-- Include TTW customizations. -->
   <xi:include href="/++theme++barcelonetang-custom/rules.xml">
     <xi:fallback />
   </xi:include>
