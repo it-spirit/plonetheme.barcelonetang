@@ -14,7 +14,7 @@ Theme Options And Configuration
    Patterns <patterns>
    Layouts <layouts>
 
-This section will show you how to configure your theme with the `Plone Theming Settings <https://spiritplonetheming.readthedocs.io/en/latest/>`_ add-on.
+This section will show you how to configure your theme with the `Plone Theming Settings <https://spiritplonetheming.readthedocs.io>`_ add-on.
 
 To adjust the settings for the theme:
 

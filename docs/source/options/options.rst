@@ -5,7 +5,7 @@ Available Options
 Enable Debug Mode
 =================
 
-Shows the content of the **Propertyshelf Theming Settings** in the frontend.
+Shows the content of the **Plone Theming Settings** in the frontend.
 Only activate this for local development.
 
 .. figure:: ../../_images/settings-debug--activated.png
