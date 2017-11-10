@@ -25,10 +25,10 @@ before_script:
 script:
   - bin/code-analysis
   - bin/test
-# after_success:
-#   - bin/createcoverage
-#   - pip install coveralls
-#   - coveralls
+after_success:
+  - bin/createcoverage
+  - pip install coveralls
+  - coveralls
 notifications:
   email:
     - thomas.massmann@it-spir.it
