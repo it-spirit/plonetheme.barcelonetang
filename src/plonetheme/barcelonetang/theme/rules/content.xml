@@ -19,17 +19,13 @@
         <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
       </p> -->
       <div class="row">
-        <div class="box clearfix">
-          <div class="col-xs-12 col-sm-12">
-            <xsl:apply-templates css:select="#content" />
-          </div>
+        <div class="col-xs-12 col-sm-12">
+          <xsl:apply-templates css:select="#content" />
         </div>
       </div>
       <footer class="row">
         <div class="col-xs-12 col-sm-12">
-          <div class="box clearfix">
-            <xsl:copy-of css:select="#viewlet-below-content" />
-          </div>
+          <xsl:copy-of css:select="#viewlet-below-content" />
         </div>
       </footer>
     </div>
