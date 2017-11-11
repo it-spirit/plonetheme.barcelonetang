@@ -622,3 +622,66 @@ button { //gray
     color: @plone-gray;
   }
 }
+
+
+/* pickadate.plone.less */
+.picker__holder {
+  border-color: @plone-input-border;
+}
+
+.picker__list-item:hover {
+  background: @plone-table-bg-hover;
+  color: @plone-gray-dark;
+}
+
+.picker__list-item--highlighted:hover,
+.picker--focused .picker__list-item--highlighted {
+  background: @plone-link-color;
+}
+
+li.picker__list-item {
+  color: @plone-gray;
+}
+
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover {
+  background: @plone-table-bg-hover;
+}
+
+.picker__day--highlighted:hover,
+.picker__day--highlighted {
+  background: @plone-link-color;
+}
+
+.picker__day--outfocus {
+  color: @plone-gray-lighter;
+}
+
+
+/* tablesorter.plone.less */
+.pat-tablesorter {
+  th:hover {
+    color: @plone-link-color;
+  }
+}
+
+
+/* tooltip.plone.less */
+.tooltips {
+  background: @plone-gray-darker;
+  background: rgba(0,0,0,.9);
+  color: @plone-body-bg;
+}
+
+
+/* tree.plone.less */
+.jqtree-tree {
+  .jqtree-element {
+    &:hover {
+      background: @plone-table-bg-hover;
+    }
+  }
+  .jqtree-selected > .jqtree-element {
+    background: @plone-gray-lighter;
+  }
+}
