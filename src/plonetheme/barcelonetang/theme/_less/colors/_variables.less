@@ -133,17 +133,18 @@
 
 /* Breadcrumbs */
 // Breadcrumb background color
-@plone-breadcrumb-bg: darken(@plone-portlet-header-bg,5%);
+@plone-breadcrumb-bg: darken(@plone-portlet-header-bg, 5%);
 // Breadcrumb text color
 @plone-breadcrumb-color: @plone-gray-lighter;
 // Text color of current page in the breadcrumb
 @plone-breadcrumb-active-color: @plone-gray-light;
 
 
-//*// SITE NAV
-  @plone-sitenav-link-hover-bg:             #7099bf;
-  @plone-sitenav-bg:                  @plone-link-color;
-  @plone-sitenav-hover-bg:              @plone-link-color;
+/* Site navigation */
+@plone-sitenav-link-hover-bg: #7099bf;
+// @plone-sitenav-link-hover-bg: lighten(desaturate(spin(@plone-link-color, 10.5557), 61.8357), 24.7059);
+@plone-sitenav-bg: @plone-link-color;
+@plone-sitenav-hover-bg: @plone-link-color;
 
 //*// PAGINATION
 @plone-pagination-color:                     @plone-link-color;
