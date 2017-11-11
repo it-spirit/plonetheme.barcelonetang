@@ -7,6 +7,19 @@ module.exports = function (grunt) {
     // also, in this way we do not have to worry
     // about putting files in the correct order
     // (the dependency tree is walked by r.js)
+    fixindent: {
+      barceloneta: {
+        src: [
+          'assets/css/barceloneta.css'
+        ],
+        dest: 'assets/css/',
+        options: {
+          style: 'space',
+          size: 2,
+          change: 1
+        }
+      }
+    },
     copy: {
       barceloneta_src: {
         files: [
@@ -110,7 +123,7 @@ module.exports = function (grunt) {
           '_less/*.less',
           '_less/**/*.less'
         ],
-        tasks: ['less:dev', 'postcss:dev']
+        tasks: ['less:dev', 'fixindent:barceloneta', 'postcss:dev']
       }
     },
     browserSync: {
@@ -157,6 +170,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-fixindent');
   grunt.loadNpmTasks('grunt-postcss');
 
   // CWD to theme folder
@@ -164,7 +178,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('update', ['copy:barceloneta_src', 'release']);
   grunt.registerTask('release', ['less:dist', 'postcss:dist']);
-  grunt.registerTask('compile', ['less:dev', 'postcss:dev']);
+  grunt.registerTask('compile', ['less:dev', 'fixindent:barceloneta', 'postcss:dev']);
   grunt.registerTask('default', ['release']);
   grunt.registerTask('bsync', ['browserSync:html', 'watch']);
   grunt.registerTask('bsync-plone', ['browserSync:plone', 'watch']);

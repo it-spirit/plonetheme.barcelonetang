@@ -8,6 +8,7 @@
     "grunt-contrib-copy": "latest",
     "grunt-contrib-less": "latest",
     "grunt-contrib-watch": "latest",
+    "grunt-fixindent": "latest",
     "grunt-postcss": "^0.8.0",
     "pixrem": "^3.0.2",
     "cssnano": "^3.7.7",
