@@ -63,6 +63,9 @@ module.exports = function (grunt) {
         files: {
           'assets/css/barceloneta.css': '_less/barceloneta.less',
           'assets/css/theme.css': '_less/theme.less',
+          'assets/css/blue.css': '_less/colors/blue.less',
+          'assets/css/green.css': '_less/colors/green.less',
+          'assets/css/red.css': '_less/colors/red.less',
         }
       },
       dist: {
@@ -75,6 +78,9 @@ module.exports = function (grunt) {
         files: {
           'assets/css/barceloneta.css': '_less/barceloneta.less',
           'assets/css/theme.css': '_less/theme.less',
+          'assets/css/blue.css': '_less/colors/blue.less',
+          'assets/css/green.css': '_less/colors/green.less',
+          'assets/css/red.css': '_less/colors/red.less',
         }
       }
     },
