@@ -59,8 +59,8 @@ Color Option
 The theme currently supports the following color options:
 
 - ``blue``
-- ``red``
 - ``green``
+- ``red``
 
 The default option is ``blue``:
 
