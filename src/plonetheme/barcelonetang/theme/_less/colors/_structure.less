@@ -1,0 +1,624 @@
+/* scaffolding.plone.less */
+@import "../barceloneta/mixin.prefixes.plone.less";
+@import "../barceloneta/mixin.buttons.plone.less";
+
+
+body {
+  color: @plone-text-color;
+  background-color: @plone-body-bg;
+}
+
+a {
+  color: @plone-link-color;
+
+  &:hover,
+  &:focus {
+    color: @plone-link-hover-color;
+  }
+}
+
+hr {
+  border-top-color: @plone-hr-border;
+}
+
+
+/* type.plone.less */
+h1, h2, h3, h4, h5, h6 {
+  color: @plone-headings-color;
+}
+
+h1, h2, h3 {
+  a:hover,
+  a:focus {
+    border-bottom-color: @plone-link-hover-color;
+  }
+}
+
+.documentDescription {
+  color: @plone-text-discreet;
+}
+
+mark {
+  background-color: @plone-state-warning-bg;
+}
+
+.discreet {
+  color: @plone-text-discreet;
+}
+
+.documentByLine {
+  color: @plone-text-discreet;
+}
+
+.documentFirstHeading {
+  border-bottom-color: @plone-page-header-border-color;
+}
+
+abbr[title],
+abbr[data-original-title] /*tooltip bootstrap plugin, just in case*/ {
+  border-bottom-color: @plone-abbr-border-color;
+}
+
+
+/* code.plone.less */
+code {
+  color: @plone-code-color;
+  background-color: @plone-code-bg;
+}
+
+kbd {
+  color: @plone-kbd-color;
+  background-color: @plone-kbd-bg;
+}
+
+pre {
+  color: @plone-pre-color;
+  background-color: @plone-pre-bg;
+  border-color: @plone-pre-border-color;
+}
+
+
+/* tables.plone.less */
+table {
+  background-color: @plone-table-bg;
+  color: @plone-gray;
+}
+
+th {
+  color: @plone-gray-dark;
+}
+
+.listing {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top-color: @plone-table-border-color;
+      }
+    }
+  }
+  > thead > tr > th {
+    border-bottom-color: @plone-table-border-color;
+  }
+  > tbody + tbody {
+    border-top-color: @plone-table-border-color;
+  }
+  .listing {
+    background-color: @plone-body-bg;
+  }
+}
+
+.listing {
+  > tbody > tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: @plone-table-bg-accent;
+    }
+  }
+}
+
+.plone-has-table {
+  @media screen and (max-width: @plone-screen-xs-max) {
+    border-color: @plone-table-border-color;
+    &::after {
+      color:@plone-gray-lighter;
+    }
+  }
+}
+
+table {
+  border-color: @plone-table-border-color;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-top-color: @plone-table-border-color;
+      }
+    }
+  }
+  > thead > tr > th {
+    border-bottom-color: @plone-table-border-color;
+  }
+  > tbody + tbody {
+    border-top-color: @plone-table-border-color;
+  }
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border-color: @plone-table-border-color;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-color: @plone-table-border-color;
+    }
+  }
+}
+
+
+/* forms.plone.less */
+legend {
+  color: @plone-legend-color;
+  border-bottom-color: @plone-legend-border-color;
+}
+
+output {
+  color: @plone-input-color;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  color: @plone-input-color;
+  background-color: @plone-input-bg;
+  border-color: @plone-input-border;
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: @plone-input-bg-disabled;
+  }
+}
+
+.field.error {
+  background: lighten(@plone-state-error-bg, 20%);
+  .box-shadow(0 0 0 5px lighten(@plone-state-error-bg, 20%));
+  > label, div.error {
+    color: @plone-toolbar-private-color;
+  }
+  div.error {
+    &::before {
+      background-color: @plone-alert-error-bullet;
+    }
+  }
+  input,textarea,select {
+    border-color: @plone-toolbar-private-color;
+    &:focus {
+      .box-shadow(0 0 8px lighten(@plone-toolbar-private-color, 40%));
+    }
+  }
+}
+
+.formHelp {
+  color: lighten(@plone-text-color, 10%);
+}
+
+.formControls {
+  border-top-color: @plone-gray-lighter;
+  background: @plone-portlet-footer-bg;
+}
+
+label .required {
+  &::after{
+    color: @plone-toolbar-private-color;
+  }
+}
+
+.optionsToggle label {
+  color:@plone-gray;
+}
+
+
+/* buttons.plone.less */
+.standalone,
+.context,
+.destructive,
+[type="submit"],
+button {
+  &:hover,
+  &:focus {
+    color: @plone-btn-standalone-color;
+  }
+}
+
+.standalone,
+[type="submit"],
+button { //gray
+  .button-variant(@plone-btn-standalone-color; @plone-btn-standalone-bg; @plone-btn-standalone-border);
+}
+
+.context { //colored
+  .button-variant(@plone-btn-context-color; @plone-btn-context-bg; @plone-btn-context-border);
+}
+
+.destructive { //red
+  .button-variant(@plone-btn-destructive-color; @plone-btn-destructive-bg; @plone-btn-destructive-border);
+}
+
+
+/* states.plone.less */
+.state-published {} // Inherited, plone-link.
+.state-draft {
+  color: @plone-default-draft-color !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@plone-default-draft-color, 15%) !important;
+  }
+}
+.state-pending {
+  color: @plone-default-pending-color !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@plone-default-pending-color, 15%) !important;
+  }
+}
+.state-private {
+  color: @plone-default-private-color !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@plone-default-private-color, 15%) !important;
+  }
+}
+.state-internal {
+  color: @plone-default-internal-color !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@plone-default-internal-color, 15%) !important;
+  }
+}
+.state-internally_published {
+  color: @plone-default-internally-published-color !important;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken(@plone-default-internally-published-color, 15%) !important;
+  }
+}
+
+
+/* breadcrumbs.plone.less */
+.plone-breadcrumb {
+  background-color: @plone-breadcrumb-bg;
+  > * > span {
+    color: @plone-gray-light;
+  }
+  ol {
+    > li {
+      + li::after {
+        color: @plone-breadcrumb-bg;
+      }
+      + li::before {
+        color: @plone-breadcrumb-color;
+      }
+    }
+    a {
+      color: @plone-link-color-on-grey;
+    }
+    > #breadcrumbs-current {
+      color: @plone-breadcrumb-active-color;
+    }
+  }
+}
+
+
+/* pagination.plone.less */
+.pagination {
+  li {
+    > a,
+    > span {
+      color: @plone-pagination-color;
+      background-color: @plone-pagination-bg;
+    }
+    > a {
+      &:hover,
+      &:focus {
+        color: @plone-pagination-hover-color;
+        background-color: @plone-pagination-hover-bg;
+      }
+    }
+    &.active > span {
+      color: @plone-pagination-active-color;
+      background-color: @plone-pagination-active-bg;
+    }
+    &.disabled > span {
+      color: @plone-pagination-disabled-color;
+      background-color: @plone-pagination-disabled-bg;
+    }
+  }
+}
+
+
+/* formtabbing.plone.less */
+.pat-autotoc.autotabs,
+.autotabs {
+  background: @plone-portlet-content-bg;
+  .autotoc-nav {
+    background: @plone-portlet-header-bg;
+    a {
+      background: @plone-portlet-footer-bg;
+      &:hover {
+        background: @plone-portlet-content-bg;
+      }
+      &.active,
+      &.active:hover {
+        color: @plone-gray;
+        background: @plone-portlet-content-bg;
+        border-bottom-color: @plone-portlet-content-bg;
+      }
+    }
+  }
+}
+
+@media (max-width: @plone-screen-xs-max) {
+  .autotabs .autotoc-nav {
+    box-shadow: inset 0 -1px @plone-portlet-contrast-bg;
+    a:not(.active) {
+      box-shadow: inset 0 -1px @plone-portlet-contrast-bg;
+    }
+  }
+}
+
+
+/* views.plone.less */
+.folder-listing {
+  > li::before {
+    color: lighten(@plone-portlet-list-bullet, 15%);
+  }
+  .documentByLine {
+    color: @plone-gray-light;
+  }
+}
+
+
+/* thumbs.plone.less */
+.photoAlbumEntry {
+  a {
+    background: @plone-portlet-footer-bg;
+  }
+}
+
+
+/* alerts.plone.less */
+.portalMessage-variant(@background; @border; @text-color) {
+  background-color: @background;
+  border: @border;
+  color: @text-color;
+  > strong,
+  > dt {
+    color: fade(@text-color, 67%);
+  }
+}
+
+.alert.status,
+.portalMessage {
+  > strong,
+  > dt {
+    color: darken(@plone-alert-info-text, 10%)
+  }
+  a {
+    color: darken(@plone-link-color, 12%);
+  }
+  &.alert-success,
+  &.info {
+    .portalMessage-variant(@plone-alert-info-bg; @plone-alert-info-border; @plone-alert-info-text);
+    & > strong::before,
+    & > dt::before {
+      background-color: @plone-alert-info-bullet;
+    }
+  }
+  &.alert-warning,
+  &.warning {
+    .portalMessage-variant(@plone-alert-warning-bg; @plone-alert-warning-border; @plone-alert-warning-text);
+    & > strong::before,
+    & > dt::before {
+      background-color: @plone-alert-warning-bullet;
+    }
+  }
+  &.alert-error,
+  &.error {
+    .portalMessage-variant(@plone-alert-error-bg; @plone-alert-error-border; @plone-alert-error-text);
+    & > strong::before,
+    & > dt::before {
+      background-color: @plone-alert-error-bullet;
+    }
+  }
+}
+
+
+/* portlets.plone.less */
+.portlet {
+  .portletHeader {
+    background: @plone-portlet-header-bg;
+    color: @plone-portlet-header-color;
+    > a {
+      color: @plone-link-color-on-grey;
+    }
+  }
+  &.portletCalendar .portletHeader {
+    .calendarPrevious:hover,
+    .calendarNext:hover {
+      background: @plone-portlet-content-bg;
+    }
+  }
+  .portletContent {
+    background: @plone-portlet-content-bg;
+    & > *,
+    & > div:not(.portalMessage) {
+      color: @plone-gray;
+    }
+    > ul {
+      > li {
+        a {
+          color: @plone-link-color-on-grey;
+        }
+      }
+      .portletItemDetails {
+        color: @plone-portlet-list-small-text;
+      }
+      li:hover {
+        background: @plone-portlet-list-hover-bg;
+        a::before {
+          color: @plone-portlet-list-bullet;
+        }
+      }
+    }
+  }
+  &.portletCalendar table {
+    thead {
+      background: @plone-portlet-footer-bg;
+      th {
+        color: @plone-gray;
+        font-weight: @plone-font-weight-light;
+      }
+    }
+    .cal_has_events {
+      a:hover {
+        background: @plone-portlet-event-bullet;
+        box-shadow: 0 0 0 5px @plone-portlet-event-bullet;
+      }
+      a::after {
+        color: lighten(@plone-portlet-list-bullet, 15%);
+      }
+      a:hover::after {
+        color: @plone-portlet-list-bullet;
+      }
+    }
+    .cal_next_month,
+    .cal_prev_month {
+      &.cal_has_events > a {
+        color: lighten(@plone-portlet-list-bullet, 15%);
+      }
+      &.cal_has_events > a::after {
+        color: lighten(@plone-portlet-list-bullet, 25%);
+      }
+      &.cal_has_events > a:hover {
+        color: darken(@plone-link-color,15%);
+      }
+      &.cal_has_events > a:hover::after {
+        color: @plone-portlet-list-bullet;
+      }
+    }
+    .today > * {
+      background: @plone-portlet-contrast-bg;
+      box-shadow: 0 0 0 5px @plone-portlet-contrast-bg;
+    }
+  }
+  .portletFooter {
+    background: @plone-portlet-footer-bg;
+  }
+}
+
+.portletNavigationTree nav.portletContent > ul > li strong {
+  background: @plone-portlet-footer-bg;
+  color: @plone-gray;
+}
+.portletNavigationTree {
+  .portletContent {
+    > ul > li > a {
+      background: darken(@plone-portlet-header-bg, 2%);
+      &:hover {
+        background: @plone-portlet-footer-bg;
+      }
+      &:hover::after {
+        color: @plone-gray-light;
+      }
+    }
+    .navTreeCurrentNode > a {
+      background: @plone-portlet-footer-bg;
+      color: @plone-gray;
+      &::after {
+        color: @plone-gray-light;
+      }
+    }
+  }
+}
+
+#upgrade-products .configlets,
+#install-products .configlets,
+#activated-products .configlets,
+#broken-products .configlets {
+  li {
+    border-top-color: @plone-table-border-color;
+  }
+}
+
+
+/* controlpanels.plone.less */
+#portlet-prefs ul ul {
+  li {
+    a {
+      &::before {
+        color: lighten(@plone-portlet-list-bullet, 15%);
+      }
+    }
+  }
+}
+
+
+/* tags.plone.less */
+.link-category {
+  color: @plone-btn-standalone-color;
+  background-color: @plone-btn-standalone-bg;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: darken(@plone-btn-standalone-bg, 10%);
+    }
+  }
+
+  a& {
+    &:hover,
+    &:focus {
+      color: @plone-link-color;
+    }
+  }
+}
+
+
+/* toc.plone.less */
+.pat-autotoc:not(.autotabs) {
+  .autotoc-nav {
+    background-color: @plone-portlet-header-bg;
+    .active,
+    .active:hover {
+      color: @plone-gray;
+    }
+  }
+}
+
+
+/* dropzone.plone.less */
+.pat-dropzone {
+  .dz-default {
+    background-color: @plone-portlet-header-bg;
+    border-color: @plone-gray-lighter;
+    color: @plone-gray;
+  }
+}
