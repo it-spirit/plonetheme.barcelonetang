@@ -58,8 +58,12 @@ Color Option
 
 The theme currently supports the following color options:
 
+- ``aqua``
 - ``blue``
+- ``brown``
 - ``green``
+- ``orange``
+- ``purple``
 - ``red``
 
 The default option is ``blue``:
