@@ -15,6 +15,10 @@ The theme currently supports the following color options:
 
 The default option is ``blue``:
 
+.. figure:: ../../_images/settings-color_option--default.png
+
+   Color option: default
+
 
 aqua
 ====
