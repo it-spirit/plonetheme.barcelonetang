@@ -76,8 +76,12 @@ module.exports = function (grunt) {
         files: {
           'assets/css/barceloneta.css': '_less/barceloneta.less',
           'assets/css/theme.css': '_less/theme.less',
+          'assets/css/aqua.css': '_less/colors/aqua.less',
           'assets/css/blue.css': '_less/colors/blue.less',
+          'assets/css/brown.css': '_less/colors/brown.less',
           'assets/css/green.css': '_less/colors/green.less',
+          'assets/css/orange.css': '_less/colors/orange.less',
+          'assets/css/purple.css': '_less/colors/purple.less',
           'assets/css/red.css': '_less/colors/red.less',
         }
       },
@@ -91,8 +95,12 @@ module.exports = function (grunt) {
         files: {
           'assets/css/barceloneta.css': '_less/barceloneta.less',
           'assets/css/theme.css': '_less/theme.less',
+          'assets/css/aqua.css': '_less/colors/aqua.less',
           'assets/css/blue.css': '_less/colors/blue.less',
+          'assets/css/brown.css': '_less/colors/brown.less',
           'assets/css/green.css': '_less/colors/green.less',
+          'assets/css/orange.css': '_less/colors/orange.less',
+          'assets/css/purple.css': '_less/colors/purple.less',
           'assets/css/red.css': '_less/colors/red.less',
         }
       }

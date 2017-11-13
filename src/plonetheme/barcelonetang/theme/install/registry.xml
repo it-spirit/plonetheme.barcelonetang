@@ -5,9 +5,13 @@
       name="spirit.plone.theming.interfaces.IPloneThemingVocabularies.available_color_options"
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
+      <element>aqua</element>
       <element>blue</element>
-      <element>red</element>
+      <element>brown</element>
       <element>green</element>
+      <element>orange</element>
+      <element>purple</element>
+      <element>red</element>
     </value>
   </record>
 
