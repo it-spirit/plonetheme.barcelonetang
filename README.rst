@@ -2,6 +2,27 @@
 plonetheme.barcelonetang
 ========================
 
+.. image:: https://img.shields.io/pypi/v/plonetheme.barcelonetang.svg
+   :target: https://pypi.python.org/pypi/plonetheme.barcelonetang
+   :alt: PyPI Version
+
+.. image:: https://img.shields.io/pypi/pyversions/plonetheme.barcelonetang.svg
+   :target: https://pypi.python.org/pypi/plonetheme.barcelonetang
+   :alt: Supported Python Versions
+
+.. image:: https://img.shields.io/travis/it-spirit/plonetheme.barcelonetang/master.svg
+   :target: http://travis-ci.org/it-spirit/plonetheme.barcelonetang
+   :alt: Travis CI status
+
+.. image:: https://img.shields.io/coveralls/github/it-spirit/plonetheme.barcelonetang/master.svg
+   :target: https://coveralls.io/github/it-spirit/plonetheme.barcelonetang?branch=master
+   :alt: Coverage Status
+
+.. image:: https://img.shields.io/readthedocs/plonethemebarcelonetang.svg
+   :target: http://plonethemebarcelonetang.readthedocs.io
+   :alt: Documentation
+
+
 The Barceloneta New Generation Theme for Plone 5.
 
 This theme extends the original Barceloneta Theme (default Plone 5 theme) and adds an end-user configuration using `spirit.plone.theming <https://pypi.python.org/pypi/spirit.plone.theming>`_.
