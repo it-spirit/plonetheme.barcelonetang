@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<portlets>
+ <assignment name="static-portlet-1" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property
+     name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt leo sed purus molestie, ut faucibus elit placerat. Sed malesuada hendrerit nunc sit amet mollis. Cras congue nunc nec mi mattis, non suscipit elit commodo. Phasellus nec vulputate dolor. Sed maximus justo orci, et varius purus venenatis vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse a felis molestie, egestas odio nec, facilisis lorem. Nunc sagittis vehicula eleifend.</property>
+  <property name="more_url"/>
+  <property name="footer"/>
+  <property name="header">Static Portlet 1</property>
+  <property name="omit_border">False</property>
+ </assignment>
+ <assignment name="static-portlet-2" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property
+     name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt leo sed purus molestie, ut faucibus elit placerat. Sed malesuada hendrerit nunc sit amet mollis. Cras congue nunc nec mi mattis, non suscipit elit commodo. Phasellus nec vulputate dolor. Sed maximus justo orci, et varius purus venenatis vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse a felis molestie, egestas odio nec, facilisis lorem. Nunc sagittis vehicula eleifend.</property>
+  <property name="more_url"/>
+  <property name="footer"/>
+  <property name="header">Static Portlet 2</property>
+  <property name="omit_border">False</property>
+ </assignment>
+ <assignment name="static-portlet-3" category="context" key="/"
+    manager="plone.footerportlets" type="plone.portlet.static.Static"
+    visible="True">
+  <property
+     name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt leo sed purus molestie, ut faucibus elit placerat. Sed malesuada hendrerit nunc sit amet mollis. Cras congue nunc nec mi mattis, non suscipit elit commodo. Phasellus nec vulputate dolor. Sed maximus justo orci, et varius purus venenatis vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse a felis molestie, egestas odio nec, facilisis lorem. Nunc sagittis vehicula eleifend.</property>
+  <property name="more_url"/>
+  <property name="footer"/>
+  <property name="header">Static Portlet 3</property>
+  <property name="omit_border">False</property>
+ </assignment>
+ <assignment name="search" category="context" key="/"
+    manager="plone.footerportlets" type="portlets.Search" visible="True">
+  <property name="enableLivesearch">True</property>
+ </assignment>
+</portlets>
