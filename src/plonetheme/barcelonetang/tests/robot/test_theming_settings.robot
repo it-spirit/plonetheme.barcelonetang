@@ -87,12 +87,52 @@ Capture Plone Theming Settings Screenshots
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select From List  id=form-widgets-color_option  aqua
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-color_option--aqua.png
+    ...  css=#main-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
     Select From List  id=form-widgets-color_option  blue
     Click button  css=#form-buttons-save
     Disable autologin
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-color_option--blue.png
+    ...  css=#main-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select From List  id=form-widgets-color_option  brown
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-color_option--brown.png
+    ...  css=#main-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select From List  id=form-widgets-color_option  green
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-color_option--green.png
+    ...  css=#main-wrapper
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Select From List  id=form-widgets-color_option  orange
+    Click button  css=#form-buttons-save
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  settings-color_option--orange.png
     ...  css=#main-wrapper
 
     Enable autologin as  Manager
@@ -107,12 +147,12 @@ Capture Plone Theming Settings Screenshots
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
-    Select From List  id=form-widgets-color_option  green
+    Select From List  id=form-widgets-color_option  purple
     Click button  css=#form-buttons-save
     Disable autologin
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
-    ...  settings-color_option--green.png
+    ...  settings-color_option--purple.png
     ...  css=#main-wrapper
 
     Enable autologin as  Manager
