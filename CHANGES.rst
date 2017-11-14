@@ -5,7 +5,8 @@ Changelog
 0.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix package classifiers.
+  [tmassman]
 
 
 0.2.1 (2017-11-14)
