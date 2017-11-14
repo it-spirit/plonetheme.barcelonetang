@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-0.3 (unreleased)
-----------------
+0.2.1 (2017-11-14)
+------------------
 
 - Add additional footer content, like script tags (from site settings).
   [tmassman]
