@@ -5,14 +5,17 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add additional footer content, like script tags (from site settings).
+  [tmassman]
 
 
 0.2 (2017-11-13)
 ----------------
 
 - Update color definitions.
+  [tmassman]
 - Load testfixture profile for tests.
+  [tmassman]
 
 
 0.1 (2017-11-13)
