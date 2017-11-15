@@ -103,3 +103,24 @@ pre {
   }
 }
 
+
+/* Full width row, but only when there are no portlets. */
+#content-container {
+  &.col-md-12 {
+    .row-full {
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+
+      .container-full {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 1170px;
+      }
+    }
+  }
+}

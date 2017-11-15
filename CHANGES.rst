@@ -5,7 +5,10 @@ Changelog
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add missing CSS ID to main container.
+  [tmassman]
+- Add CSS for full-width rows (if no portlets).
+  [tmassman]
 
 
 0.2.2 (2017-11-14)
