@@ -11,7 +11,7 @@
       <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-12 col-md-6 col-md-push-3</xsl:if>
       <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-9</xsl:if>
       <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-9 col-md-push-3</xsl:if>
-      <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
+      <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-12</xsl:if>
     </xsl:variable>
 
     <div id="content-container" class="{$central}">
