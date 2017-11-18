@@ -28,11 +28,11 @@
     <value />
   </record>
 
-  <records interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_full" remove="true"></records>
-  <records interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_gray_light" remove="true"></records>
-  <records interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_primary" remove="true"></records>
-  <records interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_pattern" remove="true"></records>
-  <records interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid-row-margin" remove="true"></records>
+  <records condition="installed plone.app.mosaic" interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_full" remove="true"></records>
+  <records condition="installed plone.app.mosaic" interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_gray_light" remove="true"></records>
+  <records condition="installed plone.app.mosaic" interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_primary" remove="true"></records>
+  <records condition="installed plone.app.mosaic" interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid_row_pattern" remove="true"></records>
+  <records condition="installed plone.app.mosaic" interface="plone.app.mosaic.interfaces.IFormat" prefix="plone.app.mosaic.formats.grid-row-margin" remove="true"></records>
 
   <!-- Default actions -->
   <!-- A "remove" on single elements currently does not exist.
