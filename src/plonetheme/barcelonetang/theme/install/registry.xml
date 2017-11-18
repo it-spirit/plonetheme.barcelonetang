@@ -50,4 +50,63 @@
     </value>
   </record>
 
+
+  <!-- Full width row (only when no portlet columns). -->
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid_row_full">
+    <value key="name">grid-row-full</value>
+    <value key="category">row</value>
+    <value key="label">Full Size Row</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">200</value>
+  </records>
+
+  <!-- Light gray background. -->
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid_row_gray_light">
+    <value key="name">grid-row-gray-light</value>
+    <value key="category">row</value>
+    <value key="label">Light gray background</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">210</value>
+  </records>
+
+  <!-- Primary color background. -->
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid_row_primary">
+    <value key="name">grid-row-primary</value>
+    <value key="category">row</value>
+    <value key="label">Primary color background</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">220</value>
+  </records>
+
+  <!-- Patterned background. -->
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid_row_pattern">
+    <value key="name">grid-row-pattern</value>
+    <value key="category">row</value>
+    <value key="label">Pattern at background</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">230</value>
+  </records>
+
+  <!-- Default actions -->
+  <record name="plone.app.mosaic.default_available_actions">
+    <value purge="false">
+      <element>grid-row-full</element>
+      <element>grid-row-gray-light</element>
+      <element>grid-row-primary</element>
+      <element>grid-row-pattern</element>
+    </value>
+  </record>
+
 </registry>
