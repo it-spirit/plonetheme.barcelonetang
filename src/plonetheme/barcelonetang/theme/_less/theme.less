@@ -104,22 +104,41 @@ pre {
 }
 
 
-/* Full width row, but only when there are no portlets. */
 #content-container {
-  &.col-md-12 {
-    .row-full {
-      width: 100vw;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
+  .mosaic-grid-row {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
 
-      .container-full {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 1170px;
+  .mosaic-grid-row-dark {
+    padding: 15px 0;
+  }
+
+  .mosaic-grid-row-pattern {
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* Full width row, but only when there are no portlets. */
+body:not(.boxed) {
+  #content-container {
+    &.col-md-12 {
+      .mosaic-grid-row-full {
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+        .container-full {
+          margin-left: auto;
+          margin-right: auto;
+          width: 1170px;
+        }
       }
     }
   }
