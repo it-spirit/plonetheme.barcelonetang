@@ -21,6 +21,9 @@
   <!-- Include Barceloneta rules. -->
   <xi:include href="rules/barceloneta.xml" />
 
+  <!-- Include transformations.-->
+  <xi:include href="rules/transformations.xml" />
+
   <!-- Include custom rules. -->
   <xi:include href="rules/core.xml" />
   <xi:include href="rules/header.xml" />
