@@ -99,6 +99,18 @@
     <value key="weight">230</value>
   </records>
 
+  <!-- Extra margin. -->
+  <records interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid_row_margin">
+    <value key="name">grid-row-margin</value>
+    <value key="category">row</value>
+    <value key="label">Additional Margin</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">240</value>
+  </records>
+
   <!-- Default actions -->
   <record name="plone.app.mosaic.default_available_actions">
     <value purge="false">
@@ -106,6 +118,7 @@
       <element>grid-row-gray-light</element>
       <element>grid-row-primary</element>
       <element>grid-row-pattern</element>
+      <element>grid-row-margin</element>
     </value>
   </record>
 
