@@ -26,19 +26,34 @@ pre {
 
     max-width: 100%;
 
+    @media (min-width: 768px) {
+      width: 750px;
+    }
     @media (min-width: 992px) {
       width: 970px;
     }
-
     @media (min-width: 1200px) {
       width: 1170px;
     }
   }
+  &.plone-toolbar-left-expanded #main-wrapper {
+    @media (min-width: 888px) {
+      width: 750px;
+    }
+    @media (min-width: 1112px) {
+      width: 970px;
+    }
+    @media (min-width: 1320px) {
+      width: 1170px;
+    }
+  }
   &.plone-toolbar-left-default #main-wrapper {
+    @media (min-width: 828px) {
+      width: 750px;
+    }
     @media (min-width: 1052px) {
       width: 970px;
     }
-
     @media (min-width: 1260px) {
       width: 1170px;
     }
@@ -142,9 +157,42 @@ body:not(.boxed) {
         .container-full {
           margin-left: auto;
           margin-right: auto;
-          width: 1170px;
+          width: 100%;
+
+          @media (min-width: 768px) {
+            width: 750px;
+          }
+          @media (min-width: 992px) {
+            width: 970px;
+          }
+          @media (min-width: 1200px) {
+            width: 1170px;
+          }
         }
       }
     }
   }
+  &.plone-toolbar-left-expanded #content-container.col-md-12 .mosaic-grid-row-full .container-full {
+    @media (min-width: 888px) {
+      width: 750px;
+    }
+    @media (min-width: 1112px) {
+      width: 970px;
+    }
+    @media (min-width: 1320px) {
+      width: 1170px;
+    }
+  }
+  &.plone-toolbar-left-default #content-container.col-md-12 .mosaic-grid-row-full .container-full {
+    @media (min-width: 828px) {
+      width: 750px;
+    }
+    @media (min-width: 1052px) {
+      width: 970px;
+    }
+    @media (min-width: 1260px) {
+      width: 1170px;
+    }
+  }
 }
+
