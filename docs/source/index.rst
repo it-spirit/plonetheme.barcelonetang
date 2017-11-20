@@ -14,6 +14,7 @@ Barceloneta NG Theme
    Installation <install>
    options/index
    add-ons/index
+   customize
 
 
 .. figure:: ../_images/settings-color_option--default.png
