@@ -124,6 +124,10 @@
   <!-- Default actions -->
   <record condition="installed plone.app.mosaic"
       name="plone.app.mosaic.default_available_actions">
+    <field type="plone.registry.field.List">
+      <title>Default available actions</title>
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
     <value purge="false">
       <element>grid-row-full</element>
       <element>grid-row-gray-light</element>
