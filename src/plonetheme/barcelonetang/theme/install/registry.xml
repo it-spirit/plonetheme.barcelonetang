@@ -1,7 +1,8 @@
 <registry>
 <!-- Uncomment if you make use of spirit.plone.theming's theme options. -->
 
-  <record field="available_color_options"
+  <record condition="installed spirit.plone.theming"
+      field="available_color_options"
       name="spirit.plone.theming.interfaces.IPloneThemingVocabularies.available_color_options"
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
@@ -16,7 +17,8 @@
   </record>
 
 
-  <record field="available_footer_options"
+  <record condition="installed spirit.plone.theming"
+      field="available_footer_options"
       name="spirit.plone.theming.interfaces.IPloneThemingVocabularies.available_footer_options"
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
@@ -24,7 +26,8 @@
     </value>
   </record>
 
-  <record field="available_header_options"
+  <record condition="installed spirit.plone.theming"
+      field="available_header_options"
       name="spirit.plone.theming.interfaces.IPloneThemingVocabularies.available_header_options"
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
@@ -32,7 +35,8 @@
     </value>
   </record>
 
-  <record field="available_layout_options"
+  <record condition="installed spirit.plone.theming"
+      field="available_layout_options"
       name="spirit.plone.theming.interfaces.IPloneThemingVocabularies.available_layout_options"
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
@@ -42,7 +46,8 @@
   </record>
 
 
-  <record field="available_pattern_options"
+  <record condition="installed spirit.plone.theming"
+      field="available_pattern_options"
       name="spirit.plone.theming.interfaces.IPloneThemingVocabularies.available_pattern_options"
       interface="spirit.plone.theming.interfaces.IPloneThemingVocabularies">
     <value>
