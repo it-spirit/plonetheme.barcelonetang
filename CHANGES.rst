@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.3 (unreleased)
+0.3 (2017-11-22)
 ----------------
 
 - Add missing CSS ID to main container.
