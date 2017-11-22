@@ -9,7 +9,7 @@
                           image_url python:item_url + '/@@images/image';
                           description item/description | None;">
             <img src="${image_url}" alt="" tal:attributes="alt item/description | None" />
-            <p class="caption" tal:condition="python: show_captions and description">${description}</p>
+            <p class="caption" tal:condition="python: show_captions and description" tal:content="description"></p>
           </li>
         </tal:repeat>
       </ul>
