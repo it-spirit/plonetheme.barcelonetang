@@ -9,6 +9,8 @@ Changelog
   [tmassman]
 - Add CSS for full-width rows (if no portlets).
   [tmassman]
+- Add slider fragment using responsiveslides.js
+  [tmassman]
 
 
 0.2.2 (2017-11-14)
