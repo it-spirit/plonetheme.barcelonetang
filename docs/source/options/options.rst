@@ -172,7 +172,8 @@ If enabled, the search box (available in the header part) will be removed in the
 Slideshow Fullscreen Mode
 =========================
 
-This option is currently not supported.
+If enabled, a slideshow (if available) will be rendered right below the main navigation and take the full page width.
+When using the ``Slider`` theme fragment, remember to enable the ``Show Fullscreen`` option in the tile settings.
 
 
 Custom Footer Text

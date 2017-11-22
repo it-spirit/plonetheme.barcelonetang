@@ -1,9 +1,10 @@
-<html tal:define="images view/images | nothing;
+<html tal:define="tile_id view/id;
+                  images view/images | nothing;
                   show_captions view/data/show_captions | None;
                   show_fullscreen python: view.data.get('show_fullscreen') and 'fullscreen' or ''">
-  <div id="slider" class="${show_fullscreen}" tal:condition="images">
+  <div id="slider-${tile_id}" class="slider ${show_fullscreen}" tal:condition="images">
     <div class="rslides_container">
-      <ul id="slides1" class="rslides centered-btns centered-btns1">
+      <ul class="rslides centered-btns centered-btns1">
         <tal:repeat  tal:repeat="item images">
           <li tal:define="item_url item/getURL|item/absolute_url;
                           image_url python:item_url + '/@@images/image';
@@ -25,7 +26,7 @@
     ], function(Base) {
       'use strict';
       jQuery(function (jq) {
-        jQuery('#slides1').responsiveSlides({
+        jQuery('#slider-${tile_id} .rslides').responsiveSlides({
           auto: ${autostart},
           pager: ${pager},
           nav: ${navigation},
