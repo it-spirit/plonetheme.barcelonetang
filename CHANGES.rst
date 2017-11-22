@@ -11,6 +11,8 @@ Changelog
   [tmassman]
 - Add slider fragment using responsiveslides.js
   [tmassman]
+- Add option to show slideshow in fullscreen mode.
+  [tmassman]
 
 
 0.2.2 (2017-11-14)
