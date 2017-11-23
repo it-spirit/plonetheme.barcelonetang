@@ -63,5 +63,11 @@
       <title>Show Fullscreen</title>
       <form:widget type="z3c.form.browser.radio.RadioFieldWidget"/>
     </field>
+    <field name="image_scale" type="zope.schema.Choice">
+      <default>large</default>
+      <description/>
+      <title>Image Scale</title>
+      <vocabulary>plone.app.vocabularies.ImagesScales</vocabulary>
+    </field>
   </schema>
 </model>
