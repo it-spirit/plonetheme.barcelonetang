@@ -5,7 +5,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-version = '0.4'
+version = '0.5.dev0'
 description = 'The Barceloneta NG Theme for Plone 5.'
 long_description = '\n\n'.join([
     open('README.rst').read(),
