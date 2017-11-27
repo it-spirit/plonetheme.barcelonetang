@@ -21,10 +21,7 @@
 
 
   <!-- Show slidehsow in fullscreen mode. -->
-  <rules css:if-content="#PLONE_THEMING_SLIDESHOW_FULLSCREEN">
-    <replace css:theme-children="#slideshow-full" css:content=".slider.fullscreen" method="raw" />
-    <drop css:content=".slider.fullscreen" />
-  </rules>
-  <drop css:theme="#slideshow-full" css:if-not-content="#PLONE_THEMING_SLIDESHOW_FULLSCREEN" />
+  <replace css:theme-children="#banner" css:content=".mosaic-grid-row-banner" method="raw" />
+  <drop css:content=".mosaic-grid-row-banner" />
 
 </rules>
