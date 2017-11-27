@@ -5,7 +5,8 @@ Changelog
 0.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Remove slider theme fragment. Use collective.tiles.sliders instead.
+  [tmassman]
 
 
 0.3 (2017-11-22)
