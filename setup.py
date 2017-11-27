@@ -25,6 +25,7 @@ install_requires = [
 ],
 
 testfixture_requires = [
+    'collective.tiles.sliders',
     'plone.app.mosaic',
     'plone.app.standardtiles',
     'webcouturier.dropdownmenu',
