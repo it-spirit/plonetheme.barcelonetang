@@ -58,6 +58,11 @@
       prefix="plone.app.mosaic.formats.grid-row-margin"
       remove="true">
   </records>
+  <records condition="installed plone.app.mosaic"
+      interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid-row-banner"
+      remove="true">
+  </records>
 
   <!-- Default actions -->
   <!-- A "remove" on single elements currently does not exist.

@@ -121,6 +121,19 @@
     <value key="weight">240</value>
   </records>
 
+  <!-- Make a Banner. -->
+  <records condition="installed plone.app.mosaic"
+      interface="plone.app.mosaic.interfaces.IFormat"
+      prefix="plone.app.mosaic.formats.grid_row_banner">
+    <value key="name">grid-row-banner</value>
+    <value key="category">row</value>
+    <value key="label">Make a Banner</value>
+    <value key="action">row-toggle-class</value>
+    <value key="icon">true</value>
+    <value key="favorite">false</value>
+    <value key="weight">250</value>
+  </records>
+
   <!-- Default actions -->
   <record condition="installed plone.app.mosaic"
       name="plone.app.mosaic.default_available_actions">
@@ -134,6 +147,7 @@
       <element>grid-row-primary</element>
       <element>grid-row-pattern</element>
       <element>grid-row-margin</element>
+      <element>grid-row-banner</element>
     </value>
   </record>
 
