@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.4 (unreleased)
+0.4 (2017-11-27)
 ----------------
 
 - Remove slider theme fragment. Use collective.tiles.sliders instead.
