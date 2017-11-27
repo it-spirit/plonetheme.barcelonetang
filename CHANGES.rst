@@ -7,6 +7,8 @@ Changelog
 
 - Remove slider theme fragment. Use collective.tiles.sliders instead.
   [tmassman]
+- Add 'banner' style for mosaic rows.
+  [tmassman]
 
 
 0.3 (2017-11-22)
