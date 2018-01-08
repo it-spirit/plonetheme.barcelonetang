@@ -226,10 +226,11 @@ Capture Plone Theming Settings Screenshots
 
     Enable autologin as  Manager
     Go To  ${PLONE_URL}/@@plone-theming-settings
-    Input text  id=form-widgets-slogan  <h1>This is our site slogan</h1>
+    Input text  id=form-widgets-slogan  <h2>This is our site slogan</h2>
     Click button  css=#form-buttons-save
     Disable autologin
     Go To  ${PLONE_URL}
+    Highlight  css=.slogan
     Capture and crop page screenshot
     ...  settings-slogan--activated.png
     ...  css=#content-header
@@ -255,6 +256,7 @@ Capture Plone Theming Settings Screenshots
     Click button  css=#form-buttons-save
     Disable autologin
     Go To  ${PLONE_URL}
+    Highlight  css=.site-info .phone
     Capture and crop page screenshot
     ...  settings-phone_number--activated.png
     ...  css=.site-info
@@ -280,6 +282,7 @@ Capture Plone Theming Settings Screenshots
     Click button  css=#form-buttons-save
     Disable autologin
     Go To  ${PLONE_URL}
+    Highlight  css=.site-info .email
     Capture and crop page screenshot
     ...  settings-email--activated.png
     ...  css=.site-info
@@ -401,3 +404,21 @@ Capture Plone Theming Settings Screenshots
     Go To  ${PLONE_URL}/@@plone-theming-settings
     Unselect Checkbox  css=#form-widgets-hide_colophon-0
     Click button  css=#form-buttons-save
+
+
+Capture Example Screenshot
+
+    Enable autologin as  Manager
+    Go To  ${PLONE_URL}/@@plone-theming-settings
+    Input text  id=form-widgets-slogan  <h2>The Ultimate Enterprise CMS.</h2>
+    Input text  id=form-widgets-phone_number  +1-234-567-890
+    Input text  id=form-widgets-email  info@example.com
+    Input text  id=form-widgets-footer_text  <p>&copy; Copyright 2009-{year} Your Company Name</p>
+    Input text  id=form-widgets-colophon_text  <p>Powered by Plone, Python & <a href="{portal_url}">Your Company Name</a></p>
+    Click button  css=#form-buttons-save
+
+    Disable autologin
+    Go To  ${PLONE_URL}
+    Capture and crop page screenshot
+    ...  preview.png
+    ...  css=#main-wrapper
