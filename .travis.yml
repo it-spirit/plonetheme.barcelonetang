@@ -13,6 +13,9 @@ matrix:
   fast_finish: true
 addons:
   firefox: 45.8.0esr
+before_install:
+  # FIXME: We have no idea how and why six==1.11.0 is being installed
+  - pip uninstall -y six
 install:
   - sed -ie "s#test-5.1.x.cfg#test-$PLONE_VERSION.x.cfg#" buildout.cfg
   - pip install -r requirements.txt
