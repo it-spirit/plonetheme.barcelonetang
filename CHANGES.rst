@@ -5,7 +5,8 @@ Changelog
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix search box mobile view.
+- Show slogan, email and phone number in header.
 
 
 0.4 (2017-11-27)
