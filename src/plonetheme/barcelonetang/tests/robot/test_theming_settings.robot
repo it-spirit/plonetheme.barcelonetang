@@ -257,7 +257,7 @@ Capture Plone Theming Settings Screenshots
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-phone_number--activated.png
-    ...  css=#content-header
+    ...  css=.site-info
     ...  css=#above-content-wrapper
 
     Enable autologin as  Manager
@@ -268,7 +268,7 @@ Capture Plone Theming Settings Screenshots
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-phone_number--deactivated.png
-    ...  css=#content-header
+    ...  css=.site-info
     ...  css=#above-content-wrapper
 
 
@@ -282,7 +282,7 @@ Capture Plone Theming Settings Screenshots
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-email--activated.png
-    ...  css=#content-header
+    ...  css=.site-info
     ...  css=#above-content-wrapper
 
     Enable autologin as  Manager
@@ -293,7 +293,7 @@ Capture Plone Theming Settings Screenshots
     Go To  ${PLONE_URL}
     Capture and crop page screenshot
     ...  settings-email--deactivated.png
-    ...  css=#content-header
+    ...  css=.site-info
     ...  css=#above-content-wrapper
 
 
