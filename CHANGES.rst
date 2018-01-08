@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.5 (unreleased)
+0.5 (2018-01-08)
 ----------------
 
 - Fix search box mobile view.
