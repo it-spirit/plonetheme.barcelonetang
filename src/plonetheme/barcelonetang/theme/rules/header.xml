@@ -29,6 +29,34 @@
       </div>
     </after>
   </rules>
+  <drop css:theme=".site-info .slogan" />
+  <!--
+  <replace
+      css:if-content="#PLONE_THEMING_SLOGAN"
+      css:theme-children=".site-info .slogan"
+      css:content-children="#PLONE_THEMING_SLOGAN"
+      />
+  <drop css:theme=".site-info .slogan" css:if-not-content="#PLONE_THEMING_SLOGAN" />
+  -->
+
+
+  <!-- Show spirit.plone.theming email. -->
+  <replace css:if-content="#PLONE_THEMING_EMAIL" css:theme=".site-info .email a">
+    <xsl:variable name="email" css:select="#PLONE_THEMING_EMAIL"></xsl:variable>
+    <a href="mailto:{$email}"><xsl:value-of select="$email" /></a>
+  </replace>
+  <drop css:theme=".site-info .email" css:if-not-content="#PLONE_THEMING_EMAIL" />
+
+
+  <!-- Show spirit.plone.theming phone number. -->
+  <replace css:if-content="#PLONE_THEMING_PHONE_NUMBER" css:theme=".site-info .phone a">
+    <xsl:variable name="phone" css:select="#PLONE_THEMING_PHONE_NUMBER"></xsl:variable>
+    <xsl:variable name="phone_raw" css:select="#PLONE_THEMING_PHONE_NUMBER_RAW"></xsl:variable>
+    <a><xsl:attribute name="href">tel:<xsl:value-of select="$phone_raw" /></xsl:attribute>
+      <xsl:value-of select="$phone" />
+    </a>
+  </replace>
+  <drop css:theme=".site-info .phone" css:if-not-content="#PLONE_THEMING_PHONE_NUMBER" />
 
 
   <!-- Hide search box, if requested. -->
