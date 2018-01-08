@@ -17,6 +17,6 @@ Barceloneta NG Theme
    customize
 
 
-.. figure:: ../_images/settings-color_option--default.png
+.. figure:: ../_images/preview.png
 
    Plone site with Barceloneta NG Theme installed
