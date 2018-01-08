@@ -16,6 +16,21 @@
   </before>
   <drop css:content="#spirit_plone_theming_diazo_snippets" />
 
+
+  <!-- Show spirit.plone.theming slogan. -->
+  <rules css:if-content="#PLONE_THEMING_SLOGAN">
+    <after css:theme-children="#content-header .container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="slogan">
+            <xsl:copy-of css:select="#PLONE_THEMING_SLOGAN > *" />
+          </div>
+        </div>
+      </div>
+    </after>
+  </rules>
+
+
   <!-- Hide search box, if requested. -->
   <drop css:content="#portal-searchbox" css:if-content="#PLONE_THEMING_HIDE_SEARCHBOX" />
 
