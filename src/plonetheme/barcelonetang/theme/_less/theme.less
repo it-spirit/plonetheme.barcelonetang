@@ -27,6 +27,11 @@ img {
 #portal-searchbox {
   position: relative;
   z-index: 100;
+
+  /* Fix Safari bug since Plone 5.1rc1 */
+  .pat-livesearch {
+    min-width: 269px;
+  }
 }
 
 
