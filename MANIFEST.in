@@ -1,7 +1,6 @@
 graft src/plonetheme
 graft docs
 include *.rst
-include preview.png
 global-exclude *.pyc
 prune docs/build
 prune docs/themepreview
