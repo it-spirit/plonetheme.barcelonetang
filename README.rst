@@ -27,7 +27,9 @@ The Barceloneta New Generation Theme for Plone 5.
 
 This theme extends the original Barceloneta Theme (default Plone 5 theme) and adds an end-user configuration using `spirit.plone.theming <https://pypi.python.org/pypi/spirit.plone.theming>`_.
 
-.. image:: preview.png
+.. image:: https://raw.githubusercontent.com/it-spirit/plonetheme.barcelonetang/master/docs/_images/preview.png
+   :target: https://pypi.python.org/pypi/plonetheme.barcelonetang
+   :alt: Barceloneta NG Theme for Plone 5
 
 
 Features
