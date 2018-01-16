@@ -1,0 +1,32 @@
+/* BBG specific customizations. */
+
+#content-core a {
+  border-bottom: none;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-bottom: none;
+    outline: none;
+    text-decoration: underline;
+    color: @plone-link-color;
+  }
+}
+
+#portal-footer-wrapper {
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: @plone-link-color-on-dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+body.boxed {
+  #main-wrapper {
+    background-color: @bbg-white;
+  }
+}
