@@ -5,14 +5,17 @@ Changelog
 0.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Re-organized less variables and color definitions.
+  [tmassman]
 
 
 0.5 (2018-01-08)
 ----------------
 
 - Fix search box mobile view.
+  [tmassman]
 - Show slogan, email and phone number in header.
+  [tmassman]
 
 
 0.4 (2017-11-27)
