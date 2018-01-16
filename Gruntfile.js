@@ -83,6 +83,7 @@ module.exports = function (grunt) {
           'assets/css/orange.css': '_less/colors/orange.less',
           'assets/css/purple.css': '_less/colors/purple.less',
           'assets/css/red.css': '_less/colors/red.less',
+          'assets/css/bbg-default.css': '_less/colors/bbg-default.less',
         }
       },
       dist: {
@@ -102,6 +103,7 @@ module.exports = function (grunt) {
           'assets/css/orange.css': '_less/colors/orange.less',
           'assets/css/purple.css': '_less/colors/purple.less',
           'assets/css/red.css': '_less/colors/red.less',
+          'assets/css/bbg-default.css': '_less/colors/bbg-default.less',
         }
       }
     },
