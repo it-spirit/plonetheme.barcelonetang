@@ -26,3 +26,16 @@
 
 // Border color for textual input addons
 @plone-input-group-addon-border-color: @plone-input-border;
+
+// `<input>` border radius
+@plone-input-border-radius: @plone-border-radius-base;
+
+// Border color for inputs on focus
+@plone-input-border-focus: @plone-portlet-list-bullet;
+
+// Default `.form-control` height
+@plone-input-height-base: (@plone-line-height-computed + (@plone-padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@plone-input-height-large: (ceil(@plone-font-size-large * @plone-line-height-large) + (@plone-padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@plone-input-height-small: (floor(@plone-font-size-small * @plone-line-height-small) + (@plone-padding-small-vertical * 2) + 2);
