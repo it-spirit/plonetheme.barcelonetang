@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Test Layer for ps.diazo.quito."""
+"""Test Layer for plonetheme.barcelonetang."""
 
 from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE

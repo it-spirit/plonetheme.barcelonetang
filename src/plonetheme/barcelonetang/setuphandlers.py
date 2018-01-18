@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Post install import steps for ps.diazo.quito."""
+"""Post install import steps for plonetheme.barcelonetang."""
 
 from Products.CMFPlone.interfaces import INonInstallable
 from zope.interface import implementer
