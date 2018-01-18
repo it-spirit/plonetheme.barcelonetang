@@ -11,7 +11,7 @@ plonetheme.barcelonetang
    :alt: Supported Python Versions
 
 .. image:: https://img.shields.io/travis/it-spirit/plonetheme.barcelonetang/master.svg
-   :target: http://travis-ci.org/it-spirit/plonetheme.barcelonetang
+   :target: https://travis-ci.org/it-spirit/plonetheme.barcelonetang
    :alt: Travis CI status
 
 .. image:: https://img.shields.io/coveralls/github/it-spirit/plonetheme.barcelonetang/master.svg
@@ -19,7 +19,7 @@ plonetheme.barcelonetang
    :alt: Coverage Status
 
 .. image:: https://img.shields.io/readthedocs/plonethemebarcelonetang.svg
-   :target: http://plonethemebarcelonetang.readthedocs.io
+   :target: https://plonethemebarcelonetang.readthedocs.io
    :alt: Documentation
 
 
